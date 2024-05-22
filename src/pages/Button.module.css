@@ -1,0 +1,23 @@
+.button{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.button:hover{
+   background-color: rgb(153, 153, 153);
+   color: black;
+   transform: scale(1.1);
+}
+
+.button:active{
+    transform: scale(0.9);
+}
+
+.d{
+    text-align: center;
+}

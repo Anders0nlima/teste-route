@@ -1,24 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Agencia from './pages/Agencia'
+import Sobre from './pages/Sobre'
+import Contato from './pages/Contato'
+import Paises from './pages/Paises'
+import NavBar from './components/layout/NavBar'
+import Inexistente from './pages/Inexistente'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   
+   <Router>
+<NavBar/>
+<Routes>
+
+  <Route path='/' element={<Agencia/>}>
+
+  </Route>
+
+  <Route path='/sobre' element={<Sobre/>}>
+
+  </Route>
+
+  <Route path='/contato' element={<Contato/>}>
+
+   </Route>
+
+  <Route path='/paises' element={<Paises/>}>
+
+  </Route> 
+
+  <Route path='/*' element={<Inexistente/>}>
+
+  </Route> 
+
+
+</Routes>
+
+</Router>
+   </>
+
+   
+
+   
+   
   );
 }
 
