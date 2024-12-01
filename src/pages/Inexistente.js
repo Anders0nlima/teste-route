@@ -1,6 +1,6 @@
 function Inexistente(){
     return (
-      <h1>Essa página não existe, Viado!!!</h1>
+      <h1>Essa página não existe</h1>
     )
 }
 
