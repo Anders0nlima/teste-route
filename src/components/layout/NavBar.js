@@ -14,8 +14,6 @@ return(
         <div className={styles.logoGeral}>
         <img className={styles.logo} src={Logo} alt="Logo da navegação" />
         </div>
-
-        
             
           <Link className={styles.item} to="/">Agencia</Link>
         
@@ -26,9 +24,7 @@ return(
           <Link className={styles.item} to="/contato">Contato</Link>
       
       
-          <Link className={styles.item} to="/paises">Países</Link>
-        
-        
+          <Link className={styles.item} to="/paises">Países</Link> 
         
     </div>
 )
