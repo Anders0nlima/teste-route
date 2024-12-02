@@ -24,7 +24,7 @@ return(
           <Link className={styles.item} to="/contato">Contato</Link>
       
       
-          <Link className={styles.item} to="/paises">Países</Link> 
+          <Link className={styles.item} to="/paises">Autores</Link> 
         
     </div>
 )
